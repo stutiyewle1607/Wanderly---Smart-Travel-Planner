@@ -1,0 +1,118 @@
+.login-page,
+.login-page *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+.login-page{
+    background:#0b1120;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+.login-container{
+    width:400px;
+    background:#111827;
+    padding:40px;
+    border-radius:18px;
+    border:1px solid #1f2937;
+    box-shadow:0 10px 30px rgba(0,0,0,0.5);
+}
+.login-container .logo{
+    text-align:center;
+    font-size:32px;
+    color:#f59e0b;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+.login-container h1{
+    text-align:center;
+    color:white;
+}
+.login-container .subtitle{
+    text-align:center;
+    color:#9ca3af;
+    margin:15px 0 30px;
+}
+.login-container label{
+    display:block;
+    margin-bottom:8px;
+    color:white;
+    font-weight:600;
+}
+.login-container input[type=text],
+.login-container input[type=email],
+.login-container input[type=password]{
+    width:100%;
+    padding:14px;
+    background:#1f2937;
+    color:white;
+    border:none;
+    border-radius:10px;
+    margin-bottom:20px;
+}
+.login-container .options{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+}
+.login-container .remember{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    color:white;
+    font-size:14px;
+}
+.login-container .options a{
+    color:#f59e0b;
+    text-decoration:none;
+    font-size:14px;
+}
+.login-container button{
+    width:100%;
+    padding:15px;
+    background:#f59e0b;
+    border:none;
+    border-radius:10px;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+.login-container button:hover{
+    background:white;
+}
+.login-container .signup{
+    margin-top:25px;
+    text-align:center;
+    color:#9ca3af;
+}
+.login-container .signup a{
+    color:#f59e0b;
+    text-decoration:none;
+}
+.login-container .text-button{
+    width:auto;
+    padding:0;
+    border:0;
+    background:transparent;
+    color:#f59e0b;
+    font:inherit;
+    font-weight:normal;
+}
+.login-container .text-button:hover{
+    background:transparent;
+    color:white;
+}
+.login-container .form-error{
+    color:#fca5a5;
+    margin:-5px 0 16px;
+    font-size:14px;
+}
+.login-container button:disabled{
+    cursor:not-allowed;
+    opacity:0.7;
+}

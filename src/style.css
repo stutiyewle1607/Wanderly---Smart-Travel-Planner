@@ -1,0 +1,602 @@
+/* ================= GLOBAL ================= */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+body{
+    background:#0b1120;
+    color:white;
+}
+
+
+/* ================= NAVBAR ================= */
+header{
+    height:75px;
+    background:#111827;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 50px;
+    position:sticky;
+    top:0;
+    z-index:100;
+    border-bottom:1px solid #1f2937;
+}
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#f59e0b;
+}
+nav{
+    display:flex;
+    gap:30px;
+    align-items:center;
+}
+nav a{
+    text-decoration:none;
+    color:#d1d5db;
+    transition:0.3s;
+}
+nav a:hover{
+    color:#f59e0b;
+}
+
+
+/* ================= MAIN DASHBOARD ================= */
+main{
+    width:90%;
+    max-width:1400px;
+    margin:30px auto;
+}
+.dashboard-layout{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:30px;
+}
+.left-content,
+.right-sidebar{
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+}
+section{
+    background:#111827;
+    border-radius:18px;
+    padding:30px;
+    border:1px solid #1f2937;
+}
+
+
+/* ================= PROFILE ================= */
+.profile-card{
+    display:flex;
+    align-items:center;
+    gap:25px;
+}
+.avatar{
+    height:100px;
+    width:100px;
+    border-radius:50%;
+    background:linear-gradient(
+        135deg,
+        #f59e0b,
+        #ea580c
+    );
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:35px;
+    font-weight:bold;
+}
+.profile-info{
+    flex:1;
+}
+.profile-info h1{
+    font-size:30px;
+}
+.profile-info h3{
+    color:#f59e0b;
+    margin:5px 0;
+}
+.profile-info p{
+    color:#9ca3af;
+}
+.stats{
+    display:flex;
+    gap:15px;
+}
+.stats div{
+    background:#0b1120;
+    padding:15px;
+    border-radius:12px;
+    text-align:center;
+    min-width:90px;
+}
+.stats h2{
+    color:#f59e0b;
+}
+
+
+/* ================= SEARCH ================= */
+.search-section{
+    text-align:center;
+}
+.search-box{
+    margin-top:20px;
+    display:flex;
+    justify-content:center;
+}
+.search-box input{
+    width:70%;
+    padding:15px;
+    background:#1f2937;
+    border:none;
+    color:white;
+    border-radius:10px 0 0 10px;
+}
+button{
+    background:#f59e0b;
+    border:none;
+    padding:12px 25px;
+    cursor:pointer;
+    font-weight:bold;
+    border-radius:8px;
+}
+button:hover{
+    background:white;
+}
+
+
+/* ================= DESTINATIONS ================= */
+.section-title{
+    margin-bottom:25px;
+}
+.destination-container{
+    display:flex;
+    gap:25px;
+}
+.destination-card{
+    background:#0b1120;
+    border-radius:15px;
+    overflow:hidden;
+    flex:1;
+    transition:0.4s;
+}
+.destination-card:hover{
+    transform:scale(1.08);
+    box-shadow:
+    0 20px 40px rgba(0,0,0,0.6);
+}
+.image{
+    height:200px;
+    background-size:cover;
+    background-position:center;
+}
+.goa{
+background-image:url(
+"https://images.unsplash.com/photo-1512343879784-a960bf40e7f2"
+);
+}
+.manali{
+background-image:url(
+"https://images.unsplash.com/photo-1501785888041-af3ef285b470"
+);
+}
+.kerala{
+background-image:url(
+"https://images.unsplash.com/photo-1602216056096-3b40cc0c9944"
+);
+}
+.destination-card h3{
+    color:#f59e0b;
+    padding:15px;
+}
+.destination-card p{
+    color:#9ca3af;
+    padding:0 15px;
+}
+.destination-card button{
+    margin:20px 15px;
+}
+
+
+/* ================= UPCOMING TRIPS ================= */
+.trip-section h2,
+.summary-card h2{
+    margin-bottom:25px;
+}
+.timeline-item{
+    border-left:3px solid #f59e0b;
+    padding-left:20px;
+    margin-bottom:25px;
+}
+.timeline-item span{
+    color:#9ca3af;
+    font-size:14px;
+}
+.timeline-item h3{
+    margin:8px 0;
+}
+
+
+/* ================= SUMMARY ================= */
+.summary-item{
+    background:#0b1120;
+    padding:20px;
+    border-radius:12px;
+    margin-bottom:15px;
+    text-align:center;
+}
+.summary-item h3{
+    color:#f59e0b;
+    font-size:30px;
+}
+
+
+/* ================= FEATURES ================= */
+.feature-container{
+    display:flex;
+    gap:20px;
+}
+.feature-card{
+    flex:1;
+    background:#0b1120;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    transition:0.3s;
+}
+.feature-card:hover{
+    transform:translateY(-10px);
+}
+.feature-card h2{
+    font-size:35px;
+}
+.feature-card h3{
+    color:#f59e0b;
+    margin:10px;
+}
+.feature-card p{
+    color:#9ca3af;
+}
+
+
+/* ================= FOOTER ================= */
+footer{
+    background:#050914;
+    padding:25px;
+    text-align:center;
+    color:#9ca3af;
+}
+
+
+/* ================= RESPONSIVE ================= */
+@media(max-width:1000px){
+.dashboard-layout{
+    grid-template-columns:1fr;
+}
+.profile-card{
+    flex-direction:column;
+    text-align:center;
+}
+.destination-container,
+.feature-container{
+    flex-direction:column;
+}
+.stats{
+    flex-wrap:wrap;
+}
+}
+
+
+/* ================= UPCOMING JOURNEY CARDS ================= */
+.journey-card{
+    background:#0b1120;
+    padding:25px;
+    border-radius:15px;
+    margin-bottom:25px;
+}
+
+
+/* UPCOMING JOURNEY MINI CARDS */
+.mini-trip-card{
+    background:#0b1120;
+    padding:20px;
+    border-radius:15px;
+    margin-bottom:20px;
+    border:1px solid #1f2937;
+    transition:0.3s;
+    position: relative;
+    padding-right: 40px;
+}
+.mini-trip-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.5);
+}
+.mini-trip-card h3{
+    color:#f59e0b;
+    margin-bottom:12px;
+    padding-right:30px;
+}
+.mini-trip-card p{
+    color:#d1d5db;
+    margin:8px 0;
+}
+.mini-trip-card button{
+    width:100%;
+    margin-top:10px;
+}
+
+
+/* ================= WORKING DASHBOARD PAGES ================= */
+
+.logo{
+    cursor:pointer;
+}
+
+nav a{
+    cursor:pointer;
+}
+
+.notification{
+    cursor:pointer;
+}
+
+
+/* ================= DETAILS PAGE ================= */
+
+.details-page{
+    max-width:900px;
+    margin:auto;
+}
+
+.back-button{
+    margin-bottom:25px;
+}
+
+.details-image{
+    height:300px;
+    border-radius:15px;
+    background-size:cover;
+    background-position:center;
+    margin-bottom:25px;
+}
+
+.details-page h1{
+    color:#f59e0b;
+    font-size:35px;
+    margin-bottom:15px;
+}
+
+.details-description{
+    color:#d1d5db;
+    line-height:1.7;
+    margin-bottom:25px;
+}
+
+.details-box{
+    background:#0b1120;
+    padding:20px;
+    border-radius:12px;
+    margin-bottom:15px;
+    border:1px solid #1f2937;
+}
+
+.details-box h3{
+    color:#f59e0b;
+    margin-bottom:10px;
+}
+
+.details-box p{
+    color:#d1d5db;
+    line-height:1.6;
+}
+
+
+/* ================= TRIP DETAILS ================= */
+
+.trip-detail-info{
+    color:#d1d5db;
+    margin:10px 0;
+}
+
+.details-page h2{
+    color:#f59e0b;
+    margin:25px 0 15px;
+}
+
+.itinerary-item{
+    background:#0b1120;
+    padding:15px;
+    border-radius:10px;
+    margin-bottom:10px;
+    border-left:3px solid #f59e0b;
+    color:#d1d5db;
+}
+
+
+/* ================= MY TRIPS ================= */
+
+.page-introduction{
+    color:#9ca3af;
+    margin-bottom:25px;
+}
+
+.visited-trips{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.visited-trip-card{
+    background:#0b1120;
+    border:1px solid #1f2937;
+    border-radius:15px;
+    padding:25px;
+    flex:1;
+    min-width:220px;
+}
+
+.visited-trip-card h3{
+    color:#f59e0b;
+    margin-bottom:12px;
+}
+
+.visited-trip-card p{
+    color:#d1d5db;
+    margin:8px 0;
+}
+
+
+/* ================= PROFILE PAGE ================= */
+
+.profile-page{
+    max-width:700px;
+    margin:auto;
+    text-align:center;
+}
+
+.large-avatar{
+    height:120px;
+    width:120px;
+    border-radius:50%;
+    background:linear-gradient(
+        135deg,
+        #f59e0b,
+        #ea580c
+    );
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:40px;
+    font-weight:bold;
+    margin:0 auto 20px;
+}
+
+.profile-page h1{
+    font-size:32px;
+}
+
+.profile-page h3{
+    color:#f59e0b;
+    margin:8px 0 25px;
+}
+
+.profile-details{
+    background:#0b1120;
+    border-radius:15px;
+    padding:25px;
+    text-align:left;
+}
+
+.profile-details p{
+    color:#d1d5db;
+    margin:15px 0;
+}
+
+.jaipur{
+    background-image:url(
+        "https://images.unsplash.com/photo-1477587458883-47145ed94245"
+    );
+}
+.kashmir {
+    background-image: url("/images/jammu-kashmir.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #0b1120;
+}
+.udaipur{
+    background-image: url(
+        "/images/udaipur.jpg"
+    );
+}
+
+.details-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.trip-form {
+    background: #0b1120;
+    border: 1px solid #1f2937;
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+.trip-form h2 {
+    color: #f59e0b;
+    margin-bottom: 20px;
+}
+
+.trip-form label {
+    display: block;
+    color: #d1d5db;
+    margin: 15px 0 7px;
+}
+
+.trip-form input,
+.trip-form textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #374151;
+    background: #111827;
+    color: white;
+    box-sizing: border-box;
+}
+
+.trip-form textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+.form-buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.primary-button {
+    background: #f59e0b;
+    color: #111827;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.secondary-button {
+    background: #374151;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.mini-trip-card .delete-trip-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 24px;
+  height: 24px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: transparent !important;
+  cursor: pointer;
+  font-size: 15px;
+  line-height: 24px;
+  z-index: 10;
+}
+
+.delete-trip-button:hover {
+  background: transparent !important;
+}

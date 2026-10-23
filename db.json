@@ -1,0 +1,33 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "email": "stuti@wanderly.com",
+      "password": "160107",
+      "name": "Stuti Yewle"
+    },
+    {
+      "id": "2",
+      "email": "vaishnavi@wanderly.com",
+      "password": "1406",
+      "name": "Vaishnavi Welankar"
+    }
+  ],
+  "trips": [
+    {
+      "userId": 1,
+      "destination": "Kashmir",
+      "title": "Updated Kashmir Trip",
+      "startDate": "2026-10-15",
+      "endDate": "2026-10-20",
+      "travelers": 3,
+      "itinerary": [
+        "Day 1 - Arrival",
+        "Day 2 - Explore Srinagar",
+        "Day 3 - Visit Gulmarg"
+      ],
+      "notes": "Updated trip details",
+      "id": "l3dXidmml-g"
+    }
+  ]
+}
